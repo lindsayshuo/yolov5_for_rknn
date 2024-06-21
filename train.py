@@ -433,7 +433,7 @@ def train(hyp, opt, device, callbacks):  # hyp is path/to/hyp.yaml or hyp dictio
 def parse_opt(known=False):
     parser = argparse.ArgumentParser()
     parser.add_argument("--weights", type=str, default="", help="initial weights path")
-    parser.add_argument("--cfg", type=str, default="yolov5-small_n2_234.yaml", help="model.yaml path")
+    parser.add_argument("--cfg", type=str, default="yolov5n.yaml", help="model.yaml path")
     parser.add_argument("--data", type=str, default="rubbish_classify.yaml", help="dataset.yaml path")
     parser.add_argument('--hyp', type=str, default=ROOT / 'data/hyps/hyp.scratch-low.yaml', help='hyperparameters path')
     parser.add_argument('--epochs', type=int, default=300, help='total training epochs')
